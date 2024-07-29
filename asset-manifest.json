@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/weather-by-city-project/static/css/main.397ef7cf.css",
-    "main.js": "/weather-by-city-project/static/js/main.e00f5467.js",
+    "main.js": "/weather-by-city-project/static/js/main.b15ab97f.js",
     "static/js/453.f101a4c9.chunk.js": "/weather-by-city-project/static/js/453.f101a4c9.chunk.js",
     "index.html": "/weather-by-city-project/index.html",
     "main.397ef7cf.css.map": "/weather-by-city-project/static/css/main.397ef7cf.css.map",
-    "main.e00f5467.js.map": "/weather-by-city-project/static/js/main.e00f5467.js.map",
+    "main.b15ab97f.js.map": "/weather-by-city-project/static/js/main.b15ab97f.js.map",
     "453.f101a4c9.chunk.js.map": "/weather-by-city-project/static/js/453.f101a4c9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.397ef7cf.css",
-    "static/js/main.e00f5467.js"
+    "static/js/main.b15ab97f.js"
   ]
 }
