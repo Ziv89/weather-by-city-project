@@ -1,0 +1,345 @@
+
+@import '@radix-ui/colors/black-alpha.css';
+
+.App {
+    font-family: sans-serif;
+    text-align: center;
+
+  }
+  
+  .search-button
+  {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 500px;
+  }
+  .search-bar-dropdown
+  {
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+  }
+
+  .search-bar-dropdown .radix-ui-textfield {
+    flex: 1; /* Make the input take up all available space */
+  }
+  
+  .favorite-button {
+    margin-left: 10px; /* Adjust margin if needed */
+  }
+  
+  .favorite-button {
+    margin-left: 10px; /* Adjust the margin as needed */
+  }
+
+  
+  .tempraturetype
+  {
+    font-size: 15px;
+  }
+  .app {
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    font-family: sans-serif;
+    text-align: center;
+    /* border: 1px solid black; */
+  
+    /* border-radius: 10px; */
+    height: 200px;
+    width: 400px;
+    /* width: 600px; */
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .cards-container
+  {
+    display: flex;
+    flex-wrap: wrap;
+    gap:3px;
+    
+  }
+  .righttempdiv
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-div {
+    /* border-right: 1px solid black; */
+    /* padding-top: 40px; */
+    display: table-column;
+    justify-content: space-around;
+    align-items: space-around;
+  
+    /* background-color: lightblue; */
+    width: 30%;
+    padding: 20px;
+  
+    /* grid: flow; */
+  }
+.temprature{
+  display: flex;
+   justify-content: space-evenly;
+  align-items: space-evenly;
+
+}
+
+.tempratures
+{
+  display: flex;
+  justify-content: space-evenly;
+ align-items: space-evenly;
+}
+
+
+.divdate
+{
+   display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+ 
+  /* background-color: lightblue; */
+  width: 50%;
+  /* padding-top: 100px; */
+  /* padding: 50px; */
+  flex-wrap: wrap; 
+}
+.innerdate
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+ 
+  /* background-color: lightblue; */
+  width: 50%;
+  /* padding-top: 100px; */
+  /* padding: 50px; */
+  flex-wrap: wrap;
+}
+  
+  .summeryday {
+    /* align-content: center;
+    text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+  .userdiv {
+    width: 200px;
+  }
+  
+  .right-div {
+    /* display: flex; */
+    width: 30%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Switch */
+  /* reset */
+button {
+  all: unset;
+}
+
+.SwitchRoot {
+  width: 42px;
+  height: 25px;
+  background-color: var(--black-a9);
+  border-radius: 9999px;
+  position: relative;
+  box-shadow: 0 2px 10px var(--black-a7);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.SwitchRoot:focus {
+  box-shadow: 0 0 0 2px black;
+}
+.SwitchRoot[data-state='checked'] {
+  background-color: black;
+}
+
+.SwitchThumb {
+  display: block;
+  width: 21px;
+  height: 21px;
+  background-color: white;
+  border-radius: 9999px;
+  box-shadow: 0 2px 2px var(--black-a7);
+  transition: transform 100ms;
+  transform: translateX(2px);
+  will-change: transform;
+}
+.SwitchThumb[data-state='checked'] {
+  transform: translateX(19px);
+}
+
+.Label {
+  color: darkblue;
+  font-size: 15px;
+  line-height: 1;
+}
+
+
+.search-bar-dropdown {
+  width: 30%;
+  position: relative; /* Add this line */
+  
+}
+
+ul#results {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  display: none;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: white;
+  border-top: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+
+ul#results button {
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+ul#results button:hover {
+  background-color: #f0f0f0;
+}
+
+/* //card */
+.weather-card {
+  flex: 1 1 calc(100% - 20px); /* Full width minus margins */
+  max-width: 400px; /* Max width of the card */
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #f0f0f0; /* Background color for the cards */
+  border-radius: 8px; /* Rounded corners for the cards */
+  padding: 16px; /* Padding inside the cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for cards */
+}
+
+.favorites-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px; /* Adjust the gap between cards as needed */
+  padding: 16px; /* Optional padding for the container */
+}
+.first-card {
+  margin-top: 20px; /* Add gap before the first card in favorites */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left-div,
+.right-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.innerdate {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.summerydaydiv {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.tempratures {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.temprature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tempraturetype {
+  font-size: 14px;
+}
+
+
+
+@media (max-width: 768px) {
+  .weather-card {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-card {
+    flex: 1 1 calc(100% - 20px); /* One card per row on mobile devices */
+  }
+}
+
+.movie-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 16px;
+  max-width: 300px;
+  background-color: #fff;
+}
+
+.movie-card-img {
+  width: 100%;
+  height: auto;
+}
+
+.movie-card-details {
+  padding: 16px;
+}
+
+.movie-card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.movie-card-date {
+  color: #555;
+}
+
+.movie-card-rating {
+  margin-top: 8px;
+}
+
+.movie-card-favorite-indicator {
+  padding: 16px;
+  background-color: #f9f9f9;
+  text-align: center;
+  border-top: 1px solid #ddd;
+}

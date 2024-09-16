@@ -1,0 +1,23 @@
+
+[{
+    "id": 1,
+    "cityName": "NewYork",
+    "from":10,
+    "to":20,
+    "type":"F*",
+    "summery":"Sunnyday"
+}, {
+    "id": 2,
+    "cityName": "Pariz",
+    "from":10,
+    "to":20,
+    "type":"C*",
+    "summery":"Sunnyday"
+}, {
+    "id": 3,
+    "cityName": "London",
+    "from":10,
+    "to":20,
+    "type":"C*",
+    "summery":"Sunnyday"
+}] 
